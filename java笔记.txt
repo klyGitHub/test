@@ -1,0 +1,52 @@
+
+JDK;java开发工具包
+JRE：java运行环境
+
+命令
+javac   编译命令
+java   运行命令
+
+
+
+1.安装jdk
+去oracle官网下载jdk，运行安装包，傻瓜式安装即可（下一步下一步）
+
+2.如何检测jdk安装正确
+	windows键+r  打开dos窗口，在dos窗口中通过cd命令进入到jdk的安装路径中，
+到bin那一层，
+例如：cd C:\Program Files\Java\jdk-11.0.1\bin
+然后敲javac回车，java回车，出现大段文字即配置成功
+
+
+3.问题：如何使javac和java命令在任意盘，任意路径下使用
+	就是配置环境变量
+配置环境变量：
+	计算机上右键-属性-高级 系统设置-高级-环境变量-系统变量
+
+点击新建：
+	变量名：JAVA_HOME
+	变量值：JDK安装路径，bin前一层  确定
+
+找到path，双击path编辑
+	在path变量值的位置加上：%JAVA_HOME%\bin;
+	三个确定结束
+
+
+
+4.java的语言版本方向是什么?分别能做什么?
+
+1.JAVA SE：它是JAVA的标准版，
+2.JAVA ME：它是JAVA的微缩版，主要应用于嵌入式开发，
+3.JAVA EE：也叫JAVA的企业版，主要还是偏向于WEB的开发，而JAVA EE的基础就是JAVA SE，所以我们在学习JAVA SE的时候，基础一定要打好，因为这是最基本的，也是最核心的
+
+
+
+记事本开发     -----有个图片
+ctrl+r
+找到d盘              	d:
+cd 找到d盘文件夹abc  	cd D:\abc
+javac 找文件夹       	javac HelloWorld.java
+java 文件名不加.java 	java HelloWorld
+
+
+
